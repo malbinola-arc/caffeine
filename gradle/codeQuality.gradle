@@ -112,7 +112,7 @@ sonarqube {
     property 'sonar.projectKey', 'caffeine:caffeine'
     property 'sonar.login', System.env.'SONAR_TOKEN'
     property 'sonar.host.url', 'https://sonarcloud.io'
-    property 'sonar.jacoco.reportPath', jacocoMerge.destinationFile
+    property 'sonar.jacoco.reportPaths', jacocoMerge.destinationFile
   }
 }
 tasks.sonarqube.dependsOn(jacocoMerge)
